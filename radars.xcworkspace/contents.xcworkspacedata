@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:xcdatamodel-xcode4.1-bug/xcdatamodel-xcode4.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ios5-root-container-bug/ios5-root-container-bug.xcodeproj">
    </FileRef>
 </Workspace>

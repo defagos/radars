@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F14FC6E14E1BDFE00013DC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F14FC6D14E1BDFE00013DC7 /* UIKit.framework */; };
+		6F14FC7014E1BDFE00013DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F14FC6F14E1BDFE00013DC7 /* Foundation.framework */; };
+		6F14FC7214E1BDFE00013DC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F14FC7114E1BDFE00013DC7 /* CoreGraphics.framework */; };
+		6F14FC7414E1BDFE00013DC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F14FC7314E1BDFE00013DC7 /* CoreData.framework */; };
+		6F14FC9614E1BE4200013DC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F14FC8914E1BE4200013DC7 /* main.m */; };
+		6F14FC9714E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F14FC8B14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodeld */; };
+		6F14FC9914E1BE4200013DC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F14FC9214E1BE4200013DC7 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F14FC6914E1BDFE00013DC7 /* xcdatamodel-xcode4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcdatamodel-xcode4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F14FC6D14E1BDFE00013DC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F14FC6F14E1BDFE00013DC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F14FC7114E1BDFE00013DC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F14FC7314E1BDFE00013DC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6F14FC8914E1BE4200013DC7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F14FC8C14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xcdatamodel_xcode4.xcdatamodel; sourceTree = "<group>"; };
+		6F14FC9114E1BE4200013DC7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F14FC9214E1BE4200013DC7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F14FC9414E1BE4200013DC7 /* xcdatamodel-xcode4-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "xcdatamodel-xcode4-Info.plist"; sourceTree = "<group>"; };
+		6F14FC9514E1BE4200013DC7 /* xcdatamodel-xcode4-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xcdatamodel-xcode4-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F14FC6614E1BDFE00013DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F14FC6E14E1BDFE00013DC7 /* UIKit.framework in Frameworks */,
+				6F14FC7014E1BDFE00013DC7 /* Foundation.framework in Frameworks */,
+				6F14FC7214E1BDFE00013DC7 /* CoreGraphics.framework in Frameworks */,
+				6F14FC7414E1BDFE00013DC7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F14FC5E14E1BDFE00013DC7 = {
+			isa = PBXGroup;
+			children = (
+				6F14FC9B14E1BE4500013DC7 /* Other sources */,
+				6F14FC8A14E1BE4200013DC7 /* Resources */,
+				6F14FC8F14E1BE4200013DC7 /* Sources */,
+				6F14FC6C14E1BDFE00013DC7 /* Frameworks */,
+				6F14FC6A14E1BDFE00013DC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F14FC6A14E1BDFE00013DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC6914E1BDFE00013DC7 /* xcdatamodel-xcode4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F14FC6C14E1BDFE00013DC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC6D14E1BDFE00013DC7 /* UIKit.framework */,
+				6F14FC6F14E1BDFE00013DC7 /* Foundation.framework */,
+				6F14FC7114E1BDFE00013DC7 /* CoreGraphics.framework */,
+				6F14FC7314E1BDFE00013DC7 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F14FC8A14E1BE4200013DC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC8B14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F14FC8F14E1BE4200013DC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC9014E1BE4200013DC7 /* AppDelegate */,
+				6F14FC9314E1BE4200013DC7 /* Models */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6F14FC9014E1BE4200013DC7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC9114E1BE4200013DC7 /* AppDelegate.h */,
+				6F14FC9214E1BE4200013DC7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6F14FC9314E1BE4200013DC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F14FC9B14E1BE4500013DC7 /* Other sources */ = {
+			isa = PBXGroup;
+			children = (
+				6F14FC8914E1BE4200013DC7 /* main.m */,
+				6F14FC9414E1BE4200013DC7 /* xcdatamodel-xcode4-Info.plist */,
+				6F14FC9514E1BE4200013DC7 /* xcdatamodel-xcode4-Prefix.pch */,
+			);
+			name = "Other sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F14FC6814E1BDFE00013DC7 /* xcdatamodel-xcode4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F14FC8614E1BDFE00013DC7 /* Build configuration list for PBXNativeTarget "xcdatamodel-xcode4" */;
+			buildPhases = (
+				6F14FC6514E1BDFE00013DC7 /* Sources */,
+				6F14FC6614E1BDFE00013DC7 /* Frameworks */,
+				6F14FC6714E1BDFE00013DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xcdatamodel-xcode4";
+			productName = "xcdatamodel-xcode4";
+			productReference = 6F14FC6914E1BDFE00013DC7 /* xcdatamodel-xcode4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F14FC6014E1BDFE00013DC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Samuel Défago";
+			};
+			buildConfigurationList = 6F14FC6314E1BDFE00013DC7 /* Build configuration list for PBXProject "xcdatamodel-xcode4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F14FC5E14E1BDFE00013DC7;
+			productRefGroup = 6F14FC6A14E1BDFE00013DC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F14FC6814E1BDFE00013DC7 /* xcdatamodel-xcode4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F14FC6714E1BDFE00013DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F14FC6514E1BDFE00013DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F14FC9614E1BE4200013DC7 /* main.m in Sources */,
+				6F14FC9714E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodeld in Sources */,
+				6F14FC9914E1BE4200013DC7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6F14FC8414E1BDFE00013DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6F14FC8514E1BDFE00013DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F14FC8714E1BDFE00013DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xcdatamodel-xcode4-Prefix.pch";
+				INFOPLIST_FILE = "xcdatamodel-xcode4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6F14FC8814E1BDFE00013DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xcdatamodel-xcode4-Prefix.pch";
+				INFOPLIST_FILE = "xcdatamodel-xcode4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F14FC6314E1BDFE00013DC7 /* Build configuration list for PBXProject "xcdatamodel-xcode4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F14FC8414E1BDFE00013DC7 /* Debug */,
+				6F14FC8514E1BDFE00013DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F14FC8614E1BDFE00013DC7 /* Build configuration list for PBXNativeTarget "xcdatamodel-xcode4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F14FC8714E1BDFE00013DC7 /* Debug */,
+				6F14FC8814E1BDFE00013DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F14FC8B14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F14FC8C14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodel */,
+			);
+			currentVersion = 6F14FC8C14E1BE4200013DC7 /* xcdatamodel_xcode4.xcdatamodel */;
+			path = xcdatamodel_xcode4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6F14FC6014E1BDFE00013DC7 /* Project object */;
+}

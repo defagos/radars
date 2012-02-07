@@ -1,0 +1,7 @@
+.DS_Store
+build/
+xcdatamodel-xcode4.1-bug.xcodeproj/xcuserdata/
+xcdatamodel-xcode4.1-bug.xcodeproj/*.pbxuser
+xcdatamodel-xcode4.1-bug.xcodeproj/*.mode1v3
+xcdatamodel-xcode4.1-bug.xcodeproj/*.perspectivev3
+
