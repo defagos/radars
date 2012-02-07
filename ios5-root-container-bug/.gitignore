@@ -1,0 +1,7 @@
+.DS_Store
+build/
+ios5-root-container-bug.xcodeproj/xcuserdata/
+ios5-root-container-bug.xcodeproj/*.pbxuser
+ios5-root-container-bug.xcodeproj/*.mode1v3
+ios5-root-container-bug.xcodeproj/*.perspectivev3
+
