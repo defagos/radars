@@ -24,7 +24,33 @@
 
 @synthesize bottomViewController = m_bottomViewController;
 
+- (void)setBottomViewController:(UIViewController *)bottomViewController
+{
+    if (m_bottomViewController == bottomViewController) {
+        return;
+    }
+    
+    [m_bottomViewController release];
+    m_bottomViewController = [bottomViewController retain];
+    
+    // FIX: Set relationship container - child so that we do not receive the view lifecycle events automatically
+    [self addChildViewController:bottomViewController];
+}
+
 @synthesize topViewController = m_topViewController;
+
+- (void)setTopViewController:(UIViewController *)topViewController
+{
+    if (m_topViewController == topViewController) {
+        return;
+    }
+    
+    [m_topViewController release];
+    m_topViewController = [topViewController retain];
+
+    // FIX: Set relationship container - child so that we do not receive the view lifecycle events automatically
+    [self addChildViewController:topViewController];
+}
 
 #pragma mark View lifecycle
 
