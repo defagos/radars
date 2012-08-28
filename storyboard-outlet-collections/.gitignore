@@ -1,0 +1,7 @@
+.DS_Store
+build/
+storyboard-outlet-collections.xcodeproj/xcuserdata/
+storyboard-outlet-collections.xcodeproj/*.pbxuser
+storyboard-outlet-collections.xcodeproj/*.mode1v3
+storyboard-outlet-collections.xcodeproj/*.perspectivev3
+

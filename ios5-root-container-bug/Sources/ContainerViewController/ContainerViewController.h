@@ -7,6 +7,14 @@
 //
 
 /**
+ * Update
+ * ------
+ * This is not a bug, but an undocumented feature of addChildViewController:. See FIX: in ContainerViewController.m
+ *
+ *
+ * Description (not relevant anymore)
+ * ----------------------------------
+ *
  * Very basic implementation of a view controller container which does not automatically forward view lifecycle
  * and rotation events to its child view controllers. Here there are two view controllers, a bottom one and a
  * top one (this mimics a basic stack container implementation, similar to a UINavigationController with two
@@ -118,7 +126,6 @@
  * For a complete container implementation, have a look at my implementations:
  *   https://github.com/defagos/CoconutKit
  * (classes HLSStackController and HLSContainerContent)
- * 
  */
 @interface ContainerViewController : UIViewController {
 @private
