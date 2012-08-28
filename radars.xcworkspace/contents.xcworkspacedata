@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:storyboard-outlet-collections/storyboard-outlet-collections.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:xcdatamodel-xcode4.1-bug/xcdatamodel-xcode4.xcodeproj">
    </FileRef>
    <FileRef
