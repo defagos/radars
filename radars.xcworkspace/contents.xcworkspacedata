@@ -10,4 +10,7 @@
    <FileRef
       location = "group:ios5-root-container-bug/ios5-root-container-bug.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:live-rendering-bug/live-rendering-bug.xcodeproj">
+   </FileRef>
 </Workspace>
