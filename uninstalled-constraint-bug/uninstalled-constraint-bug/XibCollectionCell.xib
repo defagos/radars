@@ -34,9 +34,25 @@
             <constraints>
                 <constraint firstItem="6Sc-52-uxo" firstAttribute="leading" secondItem="4UZ-6e-BqN" secondAttribute="leading" constant="22" id="FRG-Ye-QMl"/>
                 <constraint firstItem="6Sc-52-uxo" firstAttribute="top" secondItem="4UZ-6e-BqN" secondAttribute="top" constant="8" id="QNW-9F-bsZ"/>
-                <constraint firstItem="tnq-xJ-BuY" firstAttribute="top" secondItem="6Sc-52-uxo" secondAttribute="bottom" constant="12" id="kgm-a6-QhC"/>
-                <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerX" secondItem="6Sc-52-uxo" secondAttribute="centerX" id="zEc-uT-w6L"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="leading" secondItem="6Sc-52-uxo" secondAttribute="trailing" constant="12" identifier="debug_label_image_horizontal_distance" id="ff2-66-MeE"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerY" secondItem="6Sc-52-uxo" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="hdt-uv-7Yj"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="top" secondItem="6Sc-52-uxo" secondAttribute="bottom" constant="12" identifier="debug_label_image_vertical_distance" id="kgm-a6-QhC"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerX" secondItem="6Sc-52-uxo" secondAttribute="centerX" identifier="debug_horizontal_label_centering" id="zEc-uT-w6L"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ff2-66-MeE"/>
+                    <exclude reference="hdt-uv-7Yj"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="ff2-66-MeE"/>
+                    <include reference="hdt-uv-7Yj"/>
+                    <exclude reference="kgm-a6-QhC"/>
+                    <exclude reference="zEc-uT-w6L"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="266" y="184"/>
         </collectionViewCell>
     </objects>
