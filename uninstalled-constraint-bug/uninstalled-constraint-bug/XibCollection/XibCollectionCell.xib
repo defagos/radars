@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="XibCollectionCell" id="4UZ-6e-BqN" customClass="XibCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-52-uxo">
+                        <rect key="frame" x="22" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="6jk-5v-knZ"/>
+                            <constraint firstAttribute="height" constant="60" id="hGk-I7-Wgg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnq-xJ-BuY">
+                        <rect key="frame" x="18" y="80" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xib" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3M-On-q5C">
+                        <rect key="frame" x="222" y="96" width="20" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o3M-On-q5C" secondAttribute="trailing" constant="8" id="5BF-Nj-6O3"/>
+                <constraint firstItem="6Sc-52-uxo" firstAttribute="leading" secondItem="4UZ-6e-BqN" secondAttribute="leading" constant="22" id="FRG-Ye-QMl"/>
+                <constraint firstItem="6Sc-52-uxo" firstAttribute="top" secondItem="4UZ-6e-BqN" secondAttribute="top" constant="8" id="QNW-9F-bsZ"/>
+                <constraint firstAttribute="bottom" secondItem="o3M-On-q5C" secondAttribute="bottom" constant="8" id="SfZ-Ue-EvZ"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="leading" secondItem="6Sc-52-uxo" secondAttribute="trailing" constant="12" identifier="debug_label_image_horizontal_distance" id="ff2-66-MeE"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerY" secondItem="6Sc-52-uxo" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="hdt-uv-7Yj"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="top" secondItem="6Sc-52-uxo" secondAttribute="bottom" constant="12" identifier="debug_label_image_vertical_distance" id="kgm-a6-QhC"/>
+                <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerX" secondItem="6Sc-52-uxo" secondAttribute="centerX" identifier="debug_horizontal_label_centering" id="zEc-uT-w6L"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ff2-66-MeE"/>
+                    <exclude reference="hdt-uv-7Yj"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="ff2-66-MeE"/>
+                    <include reference="hdt-uv-7Yj"/>
+                    <exclude reference="kgm-a6-QhC"/>
+                    <exclude reference="zEc-uT-w6L"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="266" y="184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="apple.png" width="256" height="256"/>
+    </resources>
+</document>
