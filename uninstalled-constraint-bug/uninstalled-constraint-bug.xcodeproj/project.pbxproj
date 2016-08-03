@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E69051F01D51DC800034CD7F /* PrototypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051EF1D51DC800034CD7F /* PrototypeTableViewController.m */; };
-		E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F21D51DD250034CD7F /* PrototypeCell.m */; };
-		E69051F71D51E1370034CD7F /* XibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F61D51E1370034CD7F /* XibCell.m */; };
-		E69051F91D51E1430034CD7F /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69051F81D51E1430034CD7F /* XibCell.xib */; };
-		E69051FB1D51E4DA0034CD7F /* XibCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */; };
-		E69051FE1D51E4E80034CD7F /* XibCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */; };
-		E69052011D51E5AE0034CD7F /* PrototypeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052001D51E5AE0034CD7F /* PrototypeCollectionViewController.m */; };
-		E69052051D51E8F20034CD7F /* XibCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052031D51E8F20034CD7F /* XibCollectionViewController.m */; };
-		E69052061D51E8F20034CD7F /* XibCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69052041D51E8F20034CD7F /* XibCollectionViewController.xib */; };
-		E69052091D51E9B20034CD7F /* PrototypeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052081D51E9B20034CD7F /* PrototypeCollectionCell.m */; };
-		E690520C1D51EB7F0034CD7F /* XibTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E690520B1D51EB7F0034CD7F /* XibTableViewController.m */; };
+		E69052261D51ED7F0034CD7F /* PrototypeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E690520F1D51ED7F0034CD7F /* PrototypeCollectionCell.m */; };
+		E69052271D51ED7F0034CD7F /* PrototypeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052111D51ED7F0034CD7F /* PrototypeCollectionViewController.m */; };
+		E69052281D51ED7F0034CD7F /* PrototypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052141D51ED7F0034CD7F /* PrototypeCell.m */; };
+		E69052291D51ED7F0034CD7F /* PrototypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052161D51ED7F0034CD7F /* PrototypeTableViewController.m */; };
+		E690522A1D51ED7F0034CD7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052191D51ED7F0034CD7F /* ViewController.m */; };
+		E690522B1D51ED7F0034CD7F /* XibCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E690521C1D51ED7F0034CD7F /* XibCollectionCell.m */; };
+		E690522C1D51ED7F0034CD7F /* XibCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E690521D1D51ED7F0034CD7F /* XibCollectionCell.xib */; };
+		E690522D1D51ED7F0034CD7F /* XibCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E690521F1D51ED7F0034CD7F /* XibCollectionViewController.m */; };
+		E690522E1D51ED7F0034CD7F /* XibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052221D51ED7F0034CD7F /* XibCell.m */; };
+		E690522F1D51ED7F0034CD7F /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69052231D51ED7F0034CD7F /* XibCell.xib */; };
+		E69052301D51ED7F0034CD7F /* XibTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052251D51ED7F0034CD7F /* XibTableViewController.m */; };
 		E6C6671E1D51CF6C00C81B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C6671D1D51CF6C00C81B3C /* main.m */; };
 		E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667201D51CF6C00C81B3C /* AppDelegate.m */; };
-		E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667231D51CF6C00C81B3C /* ViewController.m */; };
 		E6C667271D51CF6C00C81B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C667251D51CF6C00C81B3C /* Main.storyboard */; };
 		E6C667291D51CF6C00C81B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C667281D51CF6C00C81B3C /* Assets.xcassets */; };
 		E6C6672C1D51CF6C00C81B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6672A1D51CF6C00C81B3C /* LaunchScreen.storyboard */; };
@@ -28,31 +27,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E69051EE1D51DC800034CD7F /* PrototypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeTableViewController.h; sourceTree = "<group>"; };
-		E69051EF1D51DC800034CD7F /* PrototypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeTableViewController.m; sourceTree = "<group>"; };
-		E69051F11D51DD250034CD7F /* PrototypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCell.h; sourceTree = "<group>"; };
-		E69051F21D51DD250034CD7F /* PrototypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCell.m; sourceTree = "<group>"; };
-		E69051F51D51E1370034CD7F /* XibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCell.h; sourceTree = "<group>"; };
-		E69051F61D51E1370034CD7F /* XibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCell.m; sourceTree = "<group>"; };
-		E69051F81D51E1430034CD7F /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
-		E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCollectionCell.xib; sourceTree = "<group>"; };
-		E69051FC1D51E4E80034CD7F /* XibCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCollectionCell.h; sourceTree = "<group>"; };
-		E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCollectionCell.m; sourceTree = "<group>"; };
-		E69051FF1D51E5AE0034CD7F /* PrototypeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCollectionViewController.h; sourceTree = "<group>"; };
-		E69052001D51E5AE0034CD7F /* PrototypeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCollectionViewController.m; sourceTree = "<group>"; };
-		E69052021D51E8F20034CD7F /* XibCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCollectionViewController.h; sourceTree = "<group>"; };
-		E69052031D51E8F20034CD7F /* XibCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCollectionViewController.m; sourceTree = "<group>"; };
-		E69052041D51E8F20034CD7F /* XibCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCollectionViewController.xib; sourceTree = "<group>"; };
-		E69052071D51E9B20034CD7F /* PrototypeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCollectionCell.h; sourceTree = "<group>"; };
-		E69052081D51E9B20034CD7F /* PrototypeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCollectionCell.m; sourceTree = "<group>"; };
-		E690520A1D51EB7F0034CD7F /* XibTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTableViewController.h; sourceTree = "<group>"; };
-		E690520B1D51EB7F0034CD7F /* XibTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTableViewController.m; sourceTree = "<group>"; };
+		E690520E1D51ED7F0034CD7F /* PrototypeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCollectionCell.h; sourceTree = "<group>"; };
+		E690520F1D51ED7F0034CD7F /* PrototypeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCollectionCell.m; sourceTree = "<group>"; };
+		E69052101D51ED7F0034CD7F /* PrototypeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCollectionViewController.h; sourceTree = "<group>"; };
+		E69052111D51ED7F0034CD7F /* PrototypeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCollectionViewController.m; sourceTree = "<group>"; };
+		E69052131D51ED7F0034CD7F /* PrototypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCell.h; sourceTree = "<group>"; };
+		E69052141D51ED7F0034CD7F /* PrototypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCell.m; sourceTree = "<group>"; };
+		E69052151D51ED7F0034CD7F /* PrototypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeTableViewController.h; sourceTree = "<group>"; };
+		E69052161D51ED7F0034CD7F /* PrototypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeTableViewController.m; sourceTree = "<group>"; };
+		E69052181D51ED7F0034CD7F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E69052191D51ED7F0034CD7F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E690521B1D51ED7F0034CD7F /* XibCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCollectionCell.h; sourceTree = "<group>"; };
+		E690521C1D51ED7F0034CD7F /* XibCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCollectionCell.m; sourceTree = "<group>"; };
+		E690521D1D51ED7F0034CD7F /* XibCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCollectionCell.xib; sourceTree = "<group>"; };
+		E690521E1D51ED7F0034CD7F /* XibCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCollectionViewController.h; sourceTree = "<group>"; };
+		E690521F1D51ED7F0034CD7F /* XibCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCollectionViewController.m; sourceTree = "<group>"; };
+		E69052211D51ED7F0034CD7F /* XibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCell.h; sourceTree = "<group>"; };
+		E69052221D51ED7F0034CD7F /* XibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCell.m; sourceTree = "<group>"; };
+		E69052231D51ED7F0034CD7F /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
+		E69052241D51ED7F0034CD7F /* XibTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibTableViewController.h; sourceTree = "<group>"; };
+		E69052251D51ED7F0034CD7F /* XibTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTableViewController.m; sourceTree = "<group>"; };
 		E6C667191D51CF6C00C81B3C /* uninstalled-constraint-bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uninstalled-constraint-bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6671D1D51CF6C00C81B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6C667201D51CF6C00C81B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E6C667221D51CF6C00C81B3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E6C667231D51CF6C00C81B3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E6C667261D51CF6C00C81B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6C667281D51CF6C00C81B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C6672B1D51CF6C00C81B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +69,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E690520D1D51ED7F0034CD7F /* PrototypeCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E690520E1D51ED7F0034CD7F /* PrototypeCollectionCell.h */,
+				E690520F1D51ED7F0034CD7F /* PrototypeCollectionCell.m */,
+				E69052101D51ED7F0034CD7F /* PrototypeCollectionViewController.h */,
+				E69052111D51ED7F0034CD7F /* PrototypeCollectionViewController.m */,
+			);
+			path = PrototypeCollection;
+			sourceTree = "<group>";
+		};
+		E69052121D51ED7F0034CD7F /* PrototypeTable */ = {
+			isa = PBXGroup;
+			children = (
+				E69052131D51ED7F0034CD7F /* PrototypeCell.h */,
+				E69052141D51ED7F0034CD7F /* PrototypeCell.m */,
+				E69052151D51ED7F0034CD7F /* PrototypeTableViewController.h */,
+				E69052161D51ED7F0034CD7F /* PrototypeTableViewController.m */,
+			);
+			path = PrototypeTable;
+			sourceTree = "<group>";
+		};
+		E69052171D51ED7F0034CD7F /* SimpleView */ = {
+			isa = PBXGroup;
+			children = (
+				E69052181D51ED7F0034CD7F /* ViewController.h */,
+				E69052191D51ED7F0034CD7F /* ViewController.m */,
+			);
+			path = SimpleView;
+			sourceTree = "<group>";
+		};
+		E690521A1D51ED7F0034CD7F /* XibCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E690521B1D51ED7F0034CD7F /* XibCollectionCell.h */,
+				E690521C1D51ED7F0034CD7F /* XibCollectionCell.m */,
+				E690521D1D51ED7F0034CD7F /* XibCollectionCell.xib */,
+				E690521E1D51ED7F0034CD7F /* XibCollectionViewController.h */,
+				E690521F1D51ED7F0034CD7F /* XibCollectionViewController.m */,
+			);
+			path = XibCollection;
+			sourceTree = "<group>";
+		};
+		E69052201D51ED7F0034CD7F /* XibTable */ = {
+			isa = PBXGroup;
+			children = (
+				E69052211D51ED7F0034CD7F /* XibCell.h */,
+				E69052221D51ED7F0034CD7F /* XibCell.m */,
+				E69052231D51ED7F0034CD7F /* XibCell.xib */,
+				E69052241D51ED7F0034CD7F /* XibTableViewController.h */,
+				E69052251D51ED7F0034CD7F /* XibTableViewController.m */,
+			);
+			path = XibTable;
+			sourceTree = "<group>";
+		};
 		E6C667101D51CF6C00C81B3C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +143,11 @@
 		E6C6671B1D51CF6C00C81B3C /* uninstalled-constraint-bug */ = {
 			isa = PBXGroup;
 			children = (
+				E690520D1D51ED7F0034CD7F /* PrototypeCollection */,
+				E69052121D51ED7F0034CD7F /* PrototypeTable */,
+				E69052171D51ED7F0034CD7F /* SimpleView */,
+				E690521A1D51ED7F0034CD7F /* XibCollection */,
+				E69052201D51ED7F0034CD7F /* XibTable */,
 				E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */,
 				E6C667201D51CF6C00C81B3C /* AppDelegate.m */,
 				E6C667331D51D07E00C81B3C /* apple.png */,
@@ -97,28 +155,7 @@
 				E6C6672D1D51CF6C00C81B3C /* Info.plist */,
 				E6C6672A1D51CF6C00C81B3C /* LaunchScreen.storyboard */,
 				E6C667251D51CF6C00C81B3C /* Main.storyboard */,
-				E69051F11D51DD250034CD7F /* PrototypeCell.h */,
-				E69051F21D51DD250034CD7F /* PrototypeCell.m */,
-				E69052071D51E9B20034CD7F /* PrototypeCollectionCell.h */,
-				E69052081D51E9B20034CD7F /* PrototypeCollectionCell.m */,
-				E69051FF1D51E5AE0034CD7F /* PrototypeCollectionViewController.h */,
-				E69052001D51E5AE0034CD7F /* PrototypeCollectionViewController.m */,
-				E69051EE1D51DC800034CD7F /* PrototypeTableViewController.h */,
-				E69051EF1D51DC800034CD7F /* PrototypeTableViewController.m */,
 				E6C6671C1D51CF6C00C81B3C /* Supporting Files */,
-				E6C667221D51CF6C00C81B3C /* ViewController.h */,
-				E6C667231D51CF6C00C81B3C /* ViewController.m */,
-				E69051F51D51E1370034CD7F /* XibCell.h */,
-				E69051F61D51E1370034CD7F /* XibCell.m */,
-				E69051F81D51E1430034CD7F /* XibCell.xib */,
-				E69051FC1D51E4E80034CD7F /* XibCollectionCell.h */,
-				E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */,
-				E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */,
-				E69052021D51E8F20034CD7F /* XibCollectionViewController.h */,
-				E69052031D51E8F20034CD7F /* XibCollectionViewController.m */,
-				E69052041D51E8F20034CD7F /* XibCollectionViewController.xib */,
-				E690520A1D51EB7F0034CD7F /* XibTableViewController.h */,
-				E690520B1D51EB7F0034CD7F /* XibTableViewController.m */,
 			);
 			path = "uninstalled-constraint-bug";
 			sourceTree = "<group>";
@@ -188,12 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C6672C1D51CF6C00C81B3C /* LaunchScreen.storyboard in Resources */,
-				E69052061D51E8F20034CD7F /* XibCollectionViewController.xib in Resources */,
 				E6C667291D51CF6C00C81B3C /* Assets.xcassets in Resources */,
 				E6C667341D51D07E00C81B3C /* apple.png in Resources */,
-				E69051F91D51E1430034CD7F /* XibCell.xib in Resources */,
+				E690522F1D51ED7F0034CD7F /* XibCell.xib in Resources */,
+				E690522C1D51ED7F0034CD7F /* XibCollectionCell.xib in Resources */,
 				E6C667271D51CF6C00C81B3C /* Main.storyboard in Resources */,
-				E69051FB1D51E4DA0034CD7F /* XibCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,17 +240,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69052091D51E9B20034CD7F /* PrototypeCollectionCell.m in Sources */,
-				E69052011D51E5AE0034CD7F /* PrototypeCollectionViewController.m in Sources */,
-				E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */,
+				E690522A1D51ED7F0034CD7F /* ViewController.m in Sources */,
 				E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */,
-				E690520C1D51EB7F0034CD7F /* XibTableViewController.m in Sources */,
 				E6C6671E1D51CF6C00C81B3C /* main.m in Sources */,
-				E69052051D51E8F20034CD7F /* XibCollectionViewController.m in Sources */,
-				E69051FE1D51E4E80034CD7F /* XibCollectionCell.m in Sources */,
-				E69051F71D51E1370034CD7F /* XibCell.m in Sources */,
-				E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */,
-				E69051F01D51DC800034CD7F /* PrototypeTableViewController.m in Sources */,
+				E69052261D51ED7F0034CD7F /* PrototypeCollectionCell.m in Sources */,
+				E69052301D51ED7F0034CD7F /* XibTableViewController.m in Sources */,
+				E690522D1D51ED7F0034CD7F /* XibCollectionViewController.m in Sources */,
+				E69052281D51ED7F0034CD7F /* PrototypeCell.m in Sources */,
+				E690522B1D51ED7F0034CD7F /* XibCollectionCell.m in Sources */,
+				E690522E1D51ED7F0034CD7F /* XibCell.m in Sources */,
+				E69052291D51ED7F0034CD7F /* PrototypeTableViewController.m in Sources */,
+				E69052271D51ED7F0034CD7F /* PrototypeCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
