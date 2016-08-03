@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E69051F01D51DC800034CD7F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051EF1D51DC800034CD7F /* TableViewController.m */; };
+		E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F21D51DD250034CD7F /* PrototypeCell.m */; };
 		E6C6671E1D51CF6C00C81B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C6671D1D51CF6C00C81B3C /* main.m */; };
 		E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667201D51CF6C00C81B3C /* AppDelegate.m */; };
 		E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667231D51CF6C00C81B3C /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E69051EE1D51DC800034CD7F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E69051EF1D51DC800034CD7F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E69051F11D51DD250034CD7F /* PrototypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCell.h; sourceTree = "<group>"; };
+		E69051F21D51DD250034CD7F /* PrototypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCell.m; sourceTree = "<group>"; };
 		E6C667191D51CF6C00C81B3C /* uninstalled-constraint-bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uninstalled-constraint-bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6671D1D51CF6C00C81B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,16 +66,20 @@
 		E6C6671B1D51CF6C00C81B3C /* uninstalled-constraint-bug */ = {
 			isa = PBXGroup;
 			children = (
-				E6C667331D51D07E00C81B3C /* apple.png */,
 				E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */,
 				E6C667201D51CF6C00C81B3C /* AppDelegate.m */,
+				E6C667331D51D07E00C81B3C /* apple.png */,
+				E6C667281D51CF6C00C81B3C /* Assets.xcassets */,
+				E6C6672D1D51CF6C00C81B3C /* Info.plist */,
+				E6C6672A1D51CF6C00C81B3C /* LaunchScreen.storyboard */,
+				E6C667251D51CF6C00C81B3C /* Main.storyboard */,
+				E69051F11D51DD250034CD7F /* PrototypeCell.h */,
+				E69051F21D51DD250034CD7F /* PrototypeCell.m */,
+				E6C6671C1D51CF6C00C81B3C /* Supporting Files */,
+				E69051EE1D51DC800034CD7F /* TableViewController.h */,
+				E69051EF1D51DC800034CD7F /* TableViewController.m */,
 				E6C667221D51CF6C00C81B3C /* ViewController.h */,
 				E6C667231D51CF6C00C81B3C /* ViewController.m */,
-				E6C667251D51CF6C00C81B3C /* Main.storyboard */,
-				E6C667281D51CF6C00C81B3C /* Assets.xcassets */,
-				E6C6672A1D51CF6C00C81B3C /* LaunchScreen.storyboard */,
-				E6C6672D1D51CF6C00C81B3C /* Info.plist */,
-				E6C6671C1D51CF6C00C81B3C /* Supporting Files */,
 			);
 			path = "uninstalled-constraint-bug";
 			sourceTree = "<group>";
@@ -155,6 +165,8 @@
 				E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */,
 				E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */,
 				E6C6671E1D51CF6C00C81B3C /* main.m in Sources */,
+				E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */,
+				E69051F01D51DC800034CD7F /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +317,7 @@
 				E6C667321D51CF6C00C81B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
