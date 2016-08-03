@@ -11,6 +11,9 @@
 		E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F21D51DD250034CD7F /* PrototypeCell.m */; };
 		E69051F71D51E1370034CD7F /* XibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F61D51E1370034CD7F /* XibCell.m */; };
 		E69051F91D51E1430034CD7F /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69051F81D51E1430034CD7F /* XibCell.xib */; };
+		E69051FB1D51E4DA0034CD7F /* XibCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */; };
+		E69051FE1D51E4E80034CD7F /* XibCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */; };
+		E69052011D51E5AE0034CD7F /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69052001D51E5AE0034CD7F /* CollectionViewController.m */; };
 		E6C6671E1D51CF6C00C81B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C6671D1D51CF6C00C81B3C /* main.m */; };
 		E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667201D51CF6C00C81B3C /* AppDelegate.m */; };
 		E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667231D51CF6C00C81B3C /* ViewController.m */; };
@@ -28,6 +31,11 @@
 		E69051F51D51E1370034CD7F /* XibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCell.h; sourceTree = "<group>"; };
 		E69051F61D51E1370034CD7F /* XibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCell.m; sourceTree = "<group>"; };
 		E69051F81D51E1430034CD7F /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
+		E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCollectionCell.xib; sourceTree = "<group>"; };
+		E69051FC1D51E4E80034CD7F /* XibCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCollectionCell.h; sourceTree = "<group>"; };
+		E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCollectionCell.m; sourceTree = "<group>"; };
+		E69051FF1D51E5AE0034CD7F /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		E69052001D51E5AE0034CD7F /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		E6C667191D51CF6C00C81B3C /* uninstalled-constraint-bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uninstalled-constraint-bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6671D1D51CF6C00C81B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +83,8 @@
 				E6C667201D51CF6C00C81B3C /* AppDelegate.m */,
 				E6C667331D51D07E00C81B3C /* apple.png */,
 				E6C667281D51CF6C00C81B3C /* Assets.xcassets */,
+				E69051FF1D51E5AE0034CD7F /* CollectionViewController.h */,
+				E69052001D51E5AE0034CD7F /* CollectionViewController.m */,
 				E6C6672D1D51CF6C00C81B3C /* Info.plist */,
 				E6C6672A1D51CF6C00C81B3C /* LaunchScreen.storyboard */,
 				E6C667251D51CF6C00C81B3C /* Main.storyboard */,
@@ -88,6 +98,9 @@
 				E69051F51D51E1370034CD7F /* XibCell.h */,
 				E69051F61D51E1370034CD7F /* XibCell.m */,
 				E69051F81D51E1430034CD7F /* XibCell.xib */,
+				E69051FC1D51E4E80034CD7F /* XibCollectionCell.h */,
+				E69051FD1D51E4E80034CD7F /* XibCollectionCell.m */,
+				E69051FA1D51E4DA0034CD7F /* XibCollectionCell.xib */,
 			);
 			path = "uninstalled-constraint-bug";
 			sourceTree = "<group>";
@@ -161,6 +174,7 @@
 				E6C667341D51D07E00C81B3C /* apple.png in Resources */,
 				E69051F91D51E1430034CD7F /* XibCell.xib in Resources */,
 				E6C667271D51CF6C00C81B3C /* Main.storyboard in Resources */,
+				E69051FB1D51E4DA0034CD7F /* XibCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,9 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69052011D51E5AE0034CD7F /* CollectionViewController.m in Sources */,
 				E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */,
 				E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */,
 				E6C6671E1D51CF6C00C81B3C /* main.m in Sources */,
+				E69051FE1D51E4E80034CD7F /* XibCollectionCell.m in Sources */,
 				E69051F71D51E1370034CD7F /* XibCell.m in Sources */,
 				E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */,
 				E69051F01D51DC800034CD7F /* TableViewController.m in Sources */,
