@@ -33,11 +33,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tJO-6o-SYA" firstAttribute="centerX" secondItem="bjU-Nu-rMe" secondAttribute="centerX" id="IXb-Hl-Qxv"/>
+                            <constraint firstItem="tJO-6o-SYA" firstAttribute="centerX" secondItem="bjU-Nu-rMe" secondAttribute="centerX" identifier="debug_horizontal_label_centering" id="IXb-Hl-Qxv"/>
+                            <constraint firstItem="tJO-6o-SYA" firstAttribute="centerY" secondItem="bjU-Nu-rMe" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="SZM-Na-M49"/>
                             <constraint firstItem="bjU-Nu-rMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="ZG8-cZ-Znd"/>
-                            <constraint firstItem="tJO-6o-SYA" firstAttribute="top" secondItem="bjU-Nu-rMe" secondAttribute="bottom" constant="21" id="dk9-CL-CK7"/>
+                            <constraint firstItem="tJO-6o-SYA" firstAttribute="top" secondItem="bjU-Nu-rMe" secondAttribute="bottom" constant="21" identifier="debug_label_image_vertical_distance" id="dk9-CL-CK7"/>
+                            <constraint firstItem="tJO-6o-SYA" firstAttribute="leading" secondItem="bjU-Nu-rMe" secondAttribute="trailing" constant="8" identifier="debug_label_image_horizontal_distance" id="li7-A6-8ef"/>
                             <constraint firstItem="bjU-Nu-rMe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pTf-Km-hmq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SZM-Na-M49"/>
+                                <exclude reference="li7-A6-8ef"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="IXb-Hl-Qxv"/>
+                                <include reference="SZM-Na-M49"/>
+                                <exclude reference="dk9-CL-CK7"/>
+                                <include reference="li7-A6-8ef"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
