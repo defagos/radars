@@ -1,9 +1,7 @@
 
-#import "CollectionViewController.h"
+#import "XibCollectionViewController.h"
 
-#import "XibCollectionCell.h"
-
-@implementation CollectionViewController
+@implementation XibCollectionViewController
 
 - (void)viewDidLoad
 {

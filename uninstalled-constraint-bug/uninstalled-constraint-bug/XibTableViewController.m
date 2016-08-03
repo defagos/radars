@@ -1,9 +1,7 @@
 
-#import "TableViewController.h"
+#import "XibTableViewController.h"
 
-#import "XibCell.h"
-
-@implementation TableViewController
+@implementation XibTableViewController
 
 - (void)viewDidLoad
 {
@@ -15,17 +13,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0) {
-        return [tableView dequeueReusableCellWithIdentifier:@"PrototypeCell"];
-    }
-    else {
-        return [tableView dequeueReusableCellWithIdentifier:@"XibCell"];
-    }
+    return [tableView dequeueReusableCellWithIdentifier:@"XibCell"];
 }
 
 @end

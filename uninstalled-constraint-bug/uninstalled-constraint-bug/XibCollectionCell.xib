@@ -27,13 +27,21 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xib" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3M-On-q5C">
+                        <rect key="frame" x="222" y="96" width="20" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="o3M-On-q5C" secondAttribute="trailing" constant="8" id="5BF-Nj-6O3"/>
                 <constraint firstItem="6Sc-52-uxo" firstAttribute="leading" secondItem="4UZ-6e-BqN" secondAttribute="leading" constant="22" id="FRG-Ye-QMl"/>
                 <constraint firstItem="6Sc-52-uxo" firstAttribute="top" secondItem="4UZ-6e-BqN" secondAttribute="top" constant="8" id="QNW-9F-bsZ"/>
+                <constraint firstAttribute="bottom" secondItem="o3M-On-q5C" secondAttribute="bottom" constant="8" id="SfZ-Ue-EvZ"/>
                 <constraint firstItem="tnq-xJ-BuY" firstAttribute="leading" secondItem="6Sc-52-uxo" secondAttribute="trailing" constant="12" identifier="debug_label_image_horizontal_distance" id="ff2-66-MeE"/>
                 <constraint firstItem="tnq-xJ-BuY" firstAttribute="centerY" secondItem="6Sc-52-uxo" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="hdt-uv-7Yj"/>
                 <constraint firstItem="tnq-xJ-BuY" firstAttribute="top" secondItem="6Sc-52-uxo" secondAttribute="bottom" constant="12" identifier="debug_label_image_vertical_distance" id="kgm-a6-QhC"/>

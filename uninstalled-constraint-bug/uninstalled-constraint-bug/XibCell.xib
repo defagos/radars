@@ -27,6 +27,12 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xib" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-2L-Amr">
+                        <rect key="frame" x="572" y="96" width="20" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ccO-dr-l5j" firstAttribute="leading" secondItem="sjH-uN-jvJ" secondAttribute="leading" constant="26" id="5b2-sQ-dTv"/>
@@ -34,7 +40,9 @@
                     <constraint firstItem="0my-lP-Qsj" firstAttribute="centerY" secondItem="ccO-dr-l5j" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="Jur-dZ-sRw"/>
                     <constraint firstItem="0my-lP-Qsj" firstAttribute="top" secondItem="ccO-dr-l5j" secondAttribute="bottom" constant="13" identifier="debug_label_image_vertical_distance" id="MC2-Qa-Gq1"/>
                     <constraint firstItem="ccO-dr-l5j" firstAttribute="top" secondItem="sjH-uN-jvJ" secondAttribute="top" constant="8" id="bXd-Fw-ARD"/>
+                    <constraint firstAttribute="bottom" secondItem="h7E-2L-Amr" secondAttribute="bottom" constant="8" id="hjz-Zq-qoK"/>
                     <constraint firstItem="0my-lP-Qsj" firstAttribute="leading" secondItem="ccO-dr-l5j" secondAttribute="trailing" constant="8" identifier="debug_label_image_horizontal_distance" id="ljq-Mb-9qC"/>
+                    <constraint firstAttribute="trailing" secondItem="h7E-2L-Amr" secondAttribute="trailing" constant="8" id="wIQ-aZ-fpa"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -44,10 +52,10 @@
                 </variation>
                 <variation key="heightClass=compact">
                     <mask key="constraints">
+                        <exclude reference="FH4-zx-6A5"/>
                         <include reference="Jur-dZ-sRw"/>
                         <exclude reference="MC2-Qa-Gq1"/>
                         <include reference="ljq-Mb-9qC"/>
-                        <exclude reference="FH4-zx-6A5"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
