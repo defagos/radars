@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E69051F01D51DC800034CD7F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051EF1D51DC800034CD7F /* TableViewController.m */; };
 		E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F21D51DD250034CD7F /* PrototypeCell.m */; };
+		E69051F71D51E1370034CD7F /* XibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69051F61D51E1370034CD7F /* XibCell.m */; };
+		E69051F91D51E1430034CD7F /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69051F81D51E1430034CD7F /* XibCell.xib */; };
 		E6C6671E1D51CF6C00C81B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C6671D1D51CF6C00C81B3C /* main.m */; };
 		E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667201D51CF6C00C81B3C /* AppDelegate.m */; };
 		E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C667231D51CF6C00C81B3C /* ViewController.m */; };
@@ -23,6 +25,9 @@
 		E69051EF1D51DC800034CD7F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E69051F11D51DD250034CD7F /* PrototypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeCell.h; sourceTree = "<group>"; };
 		E69051F21D51DD250034CD7F /* PrototypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeCell.m; sourceTree = "<group>"; };
+		E69051F51D51E1370034CD7F /* XibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCell.h; sourceTree = "<group>"; };
+		E69051F61D51E1370034CD7F /* XibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCell.m; sourceTree = "<group>"; };
+		E69051F81D51E1430034CD7F /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
 		E6C667191D51CF6C00C81B3C /* uninstalled-constraint-bug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uninstalled-constraint-bug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6671D1D51CF6C00C81B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C6671F1D51CF6C00C81B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +85,9 @@
 				E69051EF1D51DC800034CD7F /* TableViewController.m */,
 				E6C667221D51CF6C00C81B3C /* ViewController.h */,
 				E6C667231D51CF6C00C81B3C /* ViewController.m */,
+				E69051F51D51E1370034CD7F /* XibCell.h */,
+				E69051F61D51E1370034CD7F /* XibCell.m */,
+				E69051F81D51E1430034CD7F /* XibCell.xib */,
 			);
 			path = "uninstalled-constraint-bug";
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 				E6C6672C1D51CF6C00C81B3C /* LaunchScreen.storyboard in Resources */,
 				E6C667291D51CF6C00C81B3C /* Assets.xcassets in Resources */,
 				E6C667341D51D07E00C81B3C /* apple.png in Resources */,
+				E69051F91D51E1430034CD7F /* XibCell.xib in Resources */,
 				E6C667271D51CF6C00C81B3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +174,7 @@
 				E6C667241D51CF6C00C81B3C /* ViewController.m in Sources */,
 				E6C667211D51CF6C00C81B3C /* AppDelegate.m in Sources */,
 				E6C6671E1D51CF6C00C81B3C /* main.m in Sources */,
+				E69051F71D51E1370034CD7F /* XibCell.m in Sources */,
 				E69051F31D51DD250034CD7F /* PrototypeCell.m in Sources */,
 				E69051F01D51DC800034CD7F /* TableViewController.m in Sources */,
 			);
