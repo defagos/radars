@@ -95,16 +95,42 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VQ-qn-iJZ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="svG-BO-15I">
+                                            <rect key="frame" x="26" y="8" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="1J9-nh-3le"/>
+                                                <constraint firstAttribute="width" constant="60" id="vdd-0G-jfx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VQ-qn-iJZ">
                                             <rect key="frame" x="22" y="81" width="68" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="svG-BO-15I">
-                                            <rect key="frame" x="26" y="8" width="60" height="60"/>
-                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5VQ-qn-iJZ" firstAttribute="centerY" secondItem="svG-BO-15I" secondAttribute="centerY" identifier="debug_vertical_label_centering" id="3Bq-7K-Eza"/>
+                                        <constraint firstItem="5VQ-qn-iJZ" firstAttribute="top" secondItem="svG-BO-15I" secondAttribute="bottom" constant="13" identifier="debug_label_image_vertical_distance" id="ECW-cR-kKW"/>
+                                        <constraint firstItem="5VQ-qn-iJZ" firstAttribute="leading" secondItem="svG-BO-15I" secondAttribute="trailing" constant="8" identifier="debug_label_image_horizontal_distance" id="V3e-Ca-eOT"/>
+                                        <constraint firstItem="svG-BO-15I" firstAttribute="top" secondItem="EYK-Kw-2A6" secondAttribute="top" constant="8" id="Xep-Sb-6MW"/>
+                                        <constraint firstItem="svG-BO-15I" firstAttribute="leading" secondItem="EYK-Kw-2A6" secondAttribute="leading" constant="26" id="ZJz-SB-1SB"/>
+                                        <constraint firstItem="5VQ-qn-iJZ" firstAttribute="centerX" secondItem="svG-BO-15I" secondAttribute="centerX" identifier="debug_horizontal_label_centering" id="ka4-37-OcK"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="3Bq-7K-Eza"/>
+                                            <exclude reference="V3e-Ca-eOT"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="3Bq-7K-Eza"/>
+                                            <exclude reference="ECW-cR-kKW"/>
+                                            <include reference="V3e-Ca-eOT"/>
+                                            <exclude reference="ka4-37-OcK"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
