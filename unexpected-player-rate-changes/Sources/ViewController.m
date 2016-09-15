@@ -32,6 +32,7 @@ static void *s_kvoContext = &s_kvoContext;
     [playerViewController.player addObserver:self forKeyPath:@"rate" options:0 context:s_kvoContext];
     
     [self presentViewController:playerViewController animated:YES completion:^{
+        // In this case, some unexpected internal rate changes are caught via KVO (break on the NSLog below)
         [playerViewController.player play];
         [playerViewController.player pause];
         [playerViewController.player play];
