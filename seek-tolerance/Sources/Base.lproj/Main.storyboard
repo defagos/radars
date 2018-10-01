@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blk-0t-Y9t">
+                                <rect key="frame" x="144" y="264" width="87" height="30"/>
+                                <state key="normal" title="Precise seek"/>
+                                <connections>
+                                    <action selector="playPreciselyAtTime" destination="BYZ-38-t0r" eventType="touchUpInside" id="pQb-fL-grp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd5-8F-FpN">
+                                <rect key="frame" x="76" y="318.5" width="223" height="30"/>
+                                <state key="normal" title="Seek with small tolerance before"/>
+                                <connections>
+                                    <action selector="playAtTimeWithToleranceBefore" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMg-ey-LGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reO-Lm-5fb">
+                                <rect key="frame" x="82" y="373.5" width="211" height="30"/>
+                                <state key="normal" title="Seek with small tolerance after"/>
+                                <connections>
+                                    <action selector="playAtTimeWithToleranceAfter" destination="BYZ-38-t0r" eventType="touchUpInside" id="8db-Ns-0wu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fd5-8F-FpN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B5F-q1-fUY"/>
+                            <constraint firstItem="reO-Lm-5fb" firstAttribute="centerX" secondItem="fd5-8F-FpN" secondAttribute="centerX" id="TAh-Dr-BGx"/>
+                            <constraint firstItem="fd5-8F-FpN" firstAttribute="centerX" secondItem="blk-0t-Y9t" secondAttribute="centerX" id="ctw-d6-pIY"/>
+                            <constraint firstItem="blk-0t-Y9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="llM-a5-vnO"/>
+                            <constraint firstItem="fd5-8F-FpN" firstAttribute="top" secondItem="blk-0t-Y9t" secondAttribute="bottom" constant="24.5" id="s4A-Q7-LVc"/>
+                            <constraint firstItem="reO-Lm-5fb" firstAttribute="top" secondItem="fd5-8F-FpN" secondAttribute="bottom" constant="25" id="si4-cf-9bs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+</document>
