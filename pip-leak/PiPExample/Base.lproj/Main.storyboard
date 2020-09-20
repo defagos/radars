@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PiPExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ8-j1-GbK">
+                                <rect key="frame" x="187.5" y="382" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6u-jm-Ofo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-XL-0Ao">
+                                <rect key="frame" x="192" y="309" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zsd-MO-pmb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAj-d7-7gW">
+                                <rect key="frame" x="57" y="64" width="300" height="169"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JAj-d7-7gW" secondAttribute="height" multiplier="16:9" id="eHs-6s-IDJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="mYQ-JV-HBK"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-Gs-gBC">
+                                <rect key="frame" x="105.5" y="469" width="203" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PiP enabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-ub-2Nt">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUL-jn-kgH">
+                                        <rect key="frame" x="154" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zom-en-JUa" userLabel="Toggle PiP">
+                                <rect key="frame" x="170.5" y="565" width="73" height="30"/>
+                                <state key="normal" title="Toggle PiP"/>
+                                <connections>
+                                    <action selector="togglePictureInPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZA-45-1iW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TQ8-j1-GbK" firstAttribute="centerX" secondItem="JAj-d7-7gW" secondAttribute="centerX" id="8Sc-RD-vM2"/>
+                            <constraint firstItem="Zom-en-JUa" firstAttribute="centerX" secondItem="JAj-d7-7gW" secondAttribute="centerX" id="AfN-0b-aLJ"/>
+                            <constraint firstItem="zyb-Gs-gBC" firstAttribute="centerX" secondItem="TQ8-j1-GbK" secondAttribute="centerX" id="GDp-Pb-Hbk"/>
+                            <constraint firstItem="JAj-d7-7gW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="J5F-tC-eRk"/>
+                            <constraint firstItem="TQ8-j1-GbK" firstAttribute="top" secondItem="nVH-XL-0Ao" secondAttribute="bottom" constant="43" id="MLC-XK-8Is"/>
+                            <constraint firstItem="nVH-XL-0Ao" firstAttribute="top" secondItem="JAj-d7-7gW" secondAttribute="bottom" constant="76" id="bdz-kh-Ql5"/>
+                            <constraint firstItem="JAj-d7-7gW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fba-5U-vvw"/>
+                            <constraint firstItem="nVH-XL-0Ao" firstAttribute="centerX" secondItem="JAj-d7-7gW" secondAttribute="centerX" id="fqI-CY-VkB"/>
+                            <constraint firstItem="zyb-Gs-gBC" firstAttribute="top" secondItem="TQ8-j1-GbK" secondAttribute="bottom" constant="57" id="gfB-yM-Z0F"/>
+                            <constraint firstItem="Zom-en-JUa" firstAttribute="top" secondItem="zyb-Gs-gBC" secondAttribute="bottom" constant="65" id="mo8-1i-X6I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pipSwitch" destination="gUL-jn-kgH" id="rpv-6D-Xk5"/>
+                        <outlet property="playerContainerView" destination="JAj-d7-7gW" id="2Ju-2P-up8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
