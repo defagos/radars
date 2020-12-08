@@ -1,0 +1,1 @@
+An SPM sample package
