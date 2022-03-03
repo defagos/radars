@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8")!)
         playerViewController.player?.play()
-        self.window?.rootViewController = playerViewController
+        window?.rootViewController = playerViewController
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             playerViewController.player = nil           // <--- No crash occurs if this line is commented out
