@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = playerViewController
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            playerViewController.player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8")!)
+            playerViewController.player = AVPlayer(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8")!)
             playerViewController.player?.play()
         }
     }
