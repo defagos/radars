@@ -3,13 +3,13 @@ import SwiftUI
 struct ContentView: View {
     struct Level1View: View {
         var body: some View {
-#if os(iOS)
+#if true
             Level2View()
 #endif
         }
     }
     
-#if os(iOS)
+#if true
     struct Level2View: View {
         var body: some View {
             Color.green
