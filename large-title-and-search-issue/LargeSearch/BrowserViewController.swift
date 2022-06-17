@@ -36,6 +36,7 @@ final class BrowserViewController: UITableViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.showsSearchResultsController = true
         searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchResultsUpdater = self
         
         navigationItem.searchController = searchController
