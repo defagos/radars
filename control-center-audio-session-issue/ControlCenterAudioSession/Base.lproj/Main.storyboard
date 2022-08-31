@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ControlCenterAudioSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ8-j1-GbK">
+                                <rect key="frame" x="187.5" y="386" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6u-jm-Ofo"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZcJ-UF-r9t">
+                                <rect key="frame" x="156" y="313" width="102" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-XL-0Ao">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zsd-MO-pmb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2un-ZF-Nje" userLabel="Pause">
+                                        <rect key="frame" x="60" y="0.0" width="42" height="30"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Zh-kE-cYq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAj-d7-7gW">
+                                <rect key="frame" x="57" y="68" width="300" height="169"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JAj-d7-7gW" secondAttribute="height" multiplier="16:9" id="eHs-6s-IDJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="mYQ-JV-HBK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix with others enabled?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-jq-SWN">
+                                <rect key="frame" x="112.5" y="472" width="189.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c5o-hV-y6x">
+                                <rect key="frame" x="182.5" y="508.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleAudioSessionMixWithOthers:" destination="BYZ-38-t0r" eventType="valueChanged" id="5rj-LX-5Wb"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c5o-hV-y6x" firstAttribute="top" secondItem="W4M-jq-SWN" secondAttribute="bottom" constant="16" id="6CK-8e-iI7"/>
+                            <constraint firstItem="TQ8-j1-GbK" firstAttribute="centerX" secondItem="JAj-d7-7gW" secondAttribute="centerX" id="8Sc-RD-vM2"/>
+                            <constraint firstItem="ZcJ-UF-r9t" firstAttribute="centerX" secondItem="JAj-d7-7gW" secondAttribute="centerX" id="HCO-Cn-ha5"/>
+                            <constraint firstItem="W4M-jq-SWN" firstAttribute="centerX" secondItem="TQ8-j1-GbK" secondAttribute="centerX" id="I8E-hp-pA2"/>
+                            <constraint firstItem="JAj-d7-7gW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="J5F-tC-eRk"/>
+                            <constraint firstItem="c5o-hV-y6x" firstAttribute="centerX" secondItem="W4M-jq-SWN" secondAttribute="centerX" id="NSZ-tG-CQY"/>
+                            <constraint firstItem="JAj-d7-7gW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fba-5U-vvw"/>
+                            <constraint firstItem="W4M-jq-SWN" firstAttribute="top" secondItem="TQ8-j1-GbK" secondAttribute="bottom" constant="56" id="kI1-IK-0cC"/>
+                            <constraint firstItem="TQ8-j1-GbK" firstAttribute="top" secondItem="ZcJ-UF-r9t" secondAttribute="bottom" constant="43" id="mgt-qO-cNi"/>
+                            <constraint firstItem="ZcJ-UF-r9t" firstAttribute="top" secondItem="JAj-d7-7gW" secondAttribute="bottom" constant="76" id="vLO-a8-Jh1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerContainerView" destination="JAj-d7-7gW" id="2Ju-2P-up8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
