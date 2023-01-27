@@ -19,6 +19,7 @@
 		6F12C2732983E13700821FFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F12C2752983E13800821FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F12C2782983E13800821FFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F12C27F298404D900821FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		6F12C2702983E13700821FFC /* AirPlayAudioProgressIssue */ = {
 			isa = PBXGroup;
 			children = (
+				6F12C27F298404D900821FFC /* Info.plist */,
 				6F12C2712983E13700821FFC /* AirPlayAudioProgressIssueApp.swift */,
 				6F12C2732983E13700821FFC /* ContentView.swift */,
 				6F12C2752983E13800821FFC /* Assets.xcassets */,
@@ -270,6 +272,7 @@
 				DEVELOPMENT_TEAM = C859N35D2X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirPlayAudioProgressIssue/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +302,7 @@
 				DEVELOPMENT_TEAM = C859N35D2X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirPlayAudioProgressIssue/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
