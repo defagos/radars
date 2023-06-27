@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F0ACEF72A49758F0058FF10 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0ACEF62A49758F0058FF10 /* ShowTime */; };
 		6F0ACEF92A498D280058FF10 /* FirstNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0ACEF82A498D280058FF10 /* FirstNameView.swift */; };
 		6F0ACEFB2A498D2E0058FF10 /* LastNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0ACEFA2A498D2E0058FF10 /* LastNameView.swift */; };
 		6FC3C26E2A449DB200A94C4E /* NavigationAndModalIssuesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3C26D2A449DB200A94C4E /* NavigationAndModalIssuesApp.swift */; };
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0ACEF72A49758F0058FF10 /* ShowTime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +93,6 @@
 			);
 			name = NavigationAndModalIssues;
 			packageProductDependencies = (
-				6F0ACEF62A49758F0058FF10 /* ShowTime */,
 			);
 			productName = NavigationAndModalIssues;
 			productReference = 6FC3C26A2A449DB200A94C4E /* NavigationAndModalIssues.app */;
@@ -126,7 +123,6 @@
 			);
 			mainGroup = 6FC3C2612A449DB200A94C4E;
 			packageReferences = (
-				6F0ACEF52A49758F0058FF10 /* XCRemoteSwiftPackageReference "ShowTime" */,
 			);
 			productRefGroup = 6FC3C26B2A449DB200A94C4E /* Products */;
 			projectDirPath = "";
@@ -366,25 +362,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6F0ACEF52A49758F0058FF10 /* XCRemoteSwiftPackageReference "ShowTime" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/KaneCheshire/ShowTime.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6F0ACEF62A49758F0058FF10 /* ShowTime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6F0ACEF52A49758F0058FF10 /* XCRemoteSwiftPackageReference "ShowTime" */;
-			productName = ShowTime;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FC3C2622A449DB200A94C4E /* Project object */;
 }
