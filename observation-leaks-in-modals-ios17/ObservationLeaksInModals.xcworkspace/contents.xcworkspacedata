@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SimpleObject/SimpleObject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ObservableObject/ObservableObject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Observable/Observable.xcodeproj">
+   </FileRef>
+</Workspace>
