@@ -26,6 +26,26 @@ struct ContentView: View {
     }
 }
 
+#if false
+
+/// Workaround involving an additional state.
+struct ContentViewWorkaround: View {
+    @State private var model = ContentViewModel()
+    @State private var selection: String?
+
+    var body: some View {
+        List($model.names, id: \.self, editActions: .all, selection: $selection) { name in
+            Text(name.wrappedValue)
+        }
+        .onChange(of: selection) { _, newValue in
+            model.selectedName = newValue
+            print("--> [ContentView] onChange: \(newValue ?? "-")")
+        }
+        .navigationTitle("Names")
+    }
+}
+#endif
+
 #Preview {
     ContentView()
 }
