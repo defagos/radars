@@ -11,6 +11,12 @@ struct ContentView: View {
         VideoPlayer(player: player)
             .onAppear(perform: player.play)
             .ignoresSafeArea()
+            .onReceive(
+                NotificationCenter.default.publisher(for: AVPlayerItem.failedToPlayToEndTimeNotification)) { notification in
+                    if let error = notification.userInfo?[AVPlayerItemFailedToPlayToEndTimeErrorKey] as? Error {
+                        print("--> Failed to play to end time: \(error)")
+                    }
+                }
     }
 }
 
