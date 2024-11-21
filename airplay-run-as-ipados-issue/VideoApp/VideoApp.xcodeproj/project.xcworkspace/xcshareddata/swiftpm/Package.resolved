@@ -1,0 +1,15 @@
+{
+  "originHash" : "ec41c750494044b8fc5a1978054cb6b10826c0e009cb60c9232dd87cda89f662",
+  "pins" : [
+    {
+      "identity" : "mobilevideolibraryfb15343579",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/defagos/MobileVideoLibraryFB15343579.git",
+      "state" : {
+        "revision" : "f1b757f3bb3af4c9611f501d896f06638b54d49f",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
