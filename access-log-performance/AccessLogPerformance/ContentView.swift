@@ -30,15 +30,6 @@ struct ContentView: View {
         .padding()
     }
 
-    private func accessLogSizePublisher() -> AnyPublisher<Int, Never> {
-        NotificationCenter.default.publisher(for: AVPlayerItem.newAccessLogEntryNotification)
-            .compactMap { notification in
-                guard let item = notification.object as? AVPlayerItem else { return nil }
-                return item.accessLog()?.events.count
-            }
-            .eraseToAnyPublisher()
-    }
-
     private func dump() {
         guard let accessLog = player.currentItem?.accessLog(),
               let data = accessLog.extendedLogData(),
@@ -46,6 +37,27 @@ struct ContentView: View {
             return
         }
         print(dump)
+    }
+}
+
+private extension ContentView {
+    static func accessLogSizePublisher(for item: AVPlayerItem) -> AnyPublisher<Int, Never> {
+        NotificationCenter.default.publisher(for: AVPlayerItem.newAccessLogEntryNotification, object: item)
+            .compactMap { notification in
+                guard let item = notification.object as? AVPlayerItem else { return nil }
+                return item.accessLog()?.events.count
+            }
+            .eraseToAnyPublisher()
+    }
+
+    func accessLogSizePublisher() -> AnyPublisher<Int, Never> {
+        player.publisher(for: \.currentItem)
+            .map { item in
+                guard let item else { return Just(0).eraseToAnyPublisher() }
+                return Self.accessLogSizePublisher(for: item)
+            }
+            .switchToLatest()
+            .eraseToAnyPublisher()
     }
 }
 
