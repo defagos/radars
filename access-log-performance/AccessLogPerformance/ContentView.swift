@@ -12,13 +12,22 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VideoPlayer(player: player)
-            LabeledContent("Access log size", value: String(accessLogSize))
-                .padding()
+            debugPanel()
         }
         .onAppear(perform: player.play)
         .onReceive(accessLogSizePublisher()) { size in
             accessLogSize = size
         }
+    }
+
+    private func debugPanel() -> some View {
+        VStack {
+            LabeledContent("Access log size", value: String(accessLogSize))
+            Button(action: dump) {
+                Text("Dump access log")
+            }
+        }
+        .padding()
     }
 
     private func accessLogSizePublisher() -> AnyPublisher<Int, Never> {
@@ -28,6 +37,15 @@ struct ContentView: View {
                 return item.accessLog()?.events.count
             }
             .eraseToAnyPublisher()
+    }
+
+    private func dump() {
+        guard let accessLog = player.currentItem?.accessLog(),
+              let data = accessLog.extendedLogData(),
+              let dump = String(data: data, encoding: .init(rawValue: accessLog.extendedLogDataStringEncoding)) else {
+            return
+        }
+        print(dump)
     }
 }
 
