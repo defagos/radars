@@ -1,0 +1,15 @@
+{
+  "originHash" : "9f0fdd9ab6b59611601f895231d70d5bc97a03ba4a685b4d0cca564a7d898839",
+  "pins" : [
+    {
+      "identity" : "showtime",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KaneCheshire/ShowTime.git",
+      "state" : {
+        "revision" : "f4e976931fc5f9b7a7d011f40c62a250c4ff53ab",
+        "version" : "2.5.3"
+      }
+    }
+  ],
+  "version" : 3
+}
