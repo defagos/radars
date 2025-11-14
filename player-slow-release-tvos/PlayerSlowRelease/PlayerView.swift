@@ -4,8 +4,17 @@ import SwiftUI
 struct PlayerView: View {
     @State private var player = AVPlayer()
     @State private var delegate: SlowLoadingResourceLoaderDelegate?
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
+        mainView()
+            .onAppear {
+                player.play()
+            }
+    }
+
+    private func mainView() -> some View {
+#if os(tvOS)
         SystemVideoView(player: player)
             .transportBarCustomMenuItems([
                 UIMenu(
@@ -23,9 +32,25 @@ struct PlayerView: View {
                 )
             ])
             .ignoresSafeArea()
-            .onAppear {
-                player.play()
+#else
+        VStack {
+            SystemVideoView(player: player)
+
+            HStack(spacing: 40) {
+                Button(action: loadSlowLoadingItem) {
+                    Label("Slow loading item", systemImage: "tortoise.fill")
+                }
+                Button(action: loadValidItem) {
+                    Label("Apple Bip Bop 16:9", systemImage: "apple.logo")
+                }
             }
+            .padding()
+
+            Button(action: close) {
+                Text("Close")
+            }
+        }
+#endif
     }
 
     private func loadSlowLoadingItem() {
@@ -41,6 +66,10 @@ struct PlayerView: View {
             url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8")!
         )
         player.replaceCurrentItem(with: item)
+    }
+
+    private func close() {
+        dismiss()
     }
 }
 

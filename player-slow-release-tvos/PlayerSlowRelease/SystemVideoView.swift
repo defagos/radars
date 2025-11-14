@@ -18,11 +18,15 @@ struct SystemVideoView: UIViewControllerRepresentable {
 
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
         uiViewController.player = player
+#if os(tvOS)
         uiViewController.contextualActions = _contextualActions.map { $0.toContextualAction(for: uiViewController) }
         uiViewController.infoViewActions = _infoViewActions.map { $0.toInfoViewAction(for: uiViewController) }
         uiViewController.transportBarCustomMenuItems = _transportBarCustomMenuItems
+#endif
     }
 }
+
+#if os(tvOS)
 
 extension SystemVideoView {
     func contextualActions(_ actions: [PlayerAction]) -> Self {
@@ -43,3 +47,5 @@ extension SystemVideoView {
         return view
     }
 }
+
+#endif
