@@ -3,17 +3,24 @@ import SwiftUI
 
 struct PlayerView: View {
     @State private var player = AVPlayer()
-    @State private var delegate = SlowLoadingResourceLoaderDelegate()
+    @State private var delegate: SlowLoadingResourceLoaderDelegate?
 
     var body: some View {
         SystemVideoView(player: player)
-            .contextualActions([
-                .init(title: "Slow loading item", systemImage: "tortoise.fill") {
-                    player.replaceCurrentItem(with: slowLoadingItem())
-                },
-                .init(title: "Playable item", systemImage: "hand.thumbsup.fill") {
-                    replaceCurrentItem()
-                }
+            .transportBarCustomMenuItems([
+                UIMenu(
+                    title: "Load content",
+                    image: UIImage(systemName: "list.and.film"),
+                    options: [.singleSelection],
+                    children: [
+                        UIAction(title: "Slow loading item", image: .init(systemName: "tortoise.fill")) { _ in
+                            loadSlowLoadingItem()
+                        },
+                        UIAction(title: "Apple Bip Bop 16:9", image: .init(systemName: "apple.logo")) { _ in
+                            loadValidItem()
+                        }
+                    ]
+                )
             ])
             .ignoresSafeArea()
             .onAppear {
@@ -21,19 +28,18 @@ struct PlayerView: View {
             }
     }
 
-    private func slowLoadingItem() -> AVPlayerItem {
+    private func loadSlowLoadingItem() {
         let asset = AVURLAsset(url: URL(string: "custom://slowloading.m3u8")!)
+        delegate = SlowLoadingResourceLoaderDelegate()
         asset.resourceLoader.setDelegate(delegate, queue: .main)
-        return .init(asset: asset)
+        let item = AVPlayerItem(asset: asset)
+        player.replaceCurrentItem(with: item)
     }
 
-    private func replaceCurrentItem() {
+    private func loadValidItem() {
         let item = AVPlayerItem(
             url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8")!
         )
-        item.externalMetadata = [
-            .init(identifier: .commonIdentifierTitle, value: "Title")
-        ].compactMap(\.self)
         player.replaceCurrentItem(with: item)
     }
 }

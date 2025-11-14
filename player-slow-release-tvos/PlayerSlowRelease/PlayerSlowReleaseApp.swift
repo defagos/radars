@@ -7,7 +7,7 @@ struct PlayerSlowReleaseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            PlayerView()
+            ContentView()
         }
     }
 }

@@ -6,6 +6,7 @@ struct SystemVideoView: UIViewControllerRepresentable {
 
     private var _contextualActions: [PlayerAction] = []
     private var _infoViewActions: [PlayerAction] = []
+    private var _transportBarCustomMenuItems: [UIMenuElement] = []
 
     init(player: AVPlayer) {
         self.player = player
@@ -19,6 +20,7 @@ struct SystemVideoView: UIViewControllerRepresentable {
         uiViewController.player = player
         uiViewController.contextualActions = _contextualActions.map { $0.toContextualAction(for: uiViewController) }
         uiViewController.infoViewActions = _infoViewActions.map { $0.toInfoViewAction(for: uiViewController) }
+        uiViewController.transportBarCustomMenuItems = _transportBarCustomMenuItems
     }
 }
 
@@ -32,6 +34,12 @@ extension SystemVideoView {
     func infoViewActions(_ actions: [PlayerAction]) -> Self {
         var view = self
         view._infoViewActions = actions
+        return view
+    }
+
+    func transportBarCustomMenuItems(_ items: [UIMenuElement]) -> Self {
+        var view = self
+        view._transportBarCustomMenuItems = items
         return view
     }
 }

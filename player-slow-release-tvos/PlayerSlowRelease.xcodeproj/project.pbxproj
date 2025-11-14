@@ -13,6 +13,7 @@
 		6F61C5192EC763C6006E2C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61C5182EC763C6006E2C3B /* AppDelegate.swift */; };
 		6F61C51B2EC769A3006E2C3B /* SlowLoadingResourceLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61C51A2EC769A3006E2C3B /* SlowLoadingResourceLoaderDelegate.swift */; };
 		6F61C51D2EC76B7C006E2C3B /* AVMetadataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61C51C2EC76B7C006E2C3B /* AVMetadataItem.swift */; };
+		6F61C5212EC77289006E2C3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61C5202EC77288006E2C3B /* ContentView.swift */; };
 		6FD2C8252A862E7800EFB252 /* PlayerSlowReleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C8242A862E7800EFB252 /* PlayerSlowReleaseApp.swift */; };
 		6FD2C8292A862E7A00EFB252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C8282A862E7A00EFB252 /* Assets.xcassets */; };
 		6FD2C82C2A862E7A00EFB252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C82B2A862E7A00EFB252 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		6F61C5182EC763C6006E2C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F61C51A2EC769A3006E2C3B /* SlowLoadingResourceLoaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowLoadingResourceLoaderDelegate.swift; sourceTree = "<group>"; };
 		6F61C51C2EC76B7C006E2C3B /* AVMetadataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVMetadataItem.swift; sourceTree = "<group>"; };
+		6F61C5202EC77288006E2C3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6FD2C8212A862E7800EFB252 /* PlayerSlowRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerSlowRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD2C8242A862E7800EFB252 /* PlayerSlowReleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSlowReleaseApp.swift; sourceTree = "<group>"; };
 		6FD2C8282A862E7A00EFB252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		6FD2C8232A862E7800EFB252 /* PlayerSlowRelease */ = {
 			isa = PBXGroup;
 			children = (
+				6F61C5202EC77288006E2C3B /* ContentView.swift */,
 				6F61C51C2EC76B7C006E2C3B /* AVMetadataItem.swift */,
 				6F61C5182EC763C6006E2C3B /* AppDelegate.swift */,
 				6FD2C8282A862E7A00EFB252 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			files = (
 				6F61C5172EC760E0006E2C3B /* PlayerAction.swift in Sources */,
 				6FD2C8252A862E7800EFB252 /* PlayerSlowReleaseApp.swift in Sources */,
+				6F61C5212EC77289006E2C3B /* ContentView.swift in Sources */,
 				6F61C51D2EC76B7C006E2C3B /* AVMetadataItem.swift in Sources */,
 				6F0A06712A86428200818EEF /* PlayerView.swift in Sources */,
 				6F61C5192EC763C6006E2C3B /* AppDelegate.swift in Sources */,
