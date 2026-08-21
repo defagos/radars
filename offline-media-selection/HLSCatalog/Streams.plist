@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Basic Stream</string>
+		<key>playlist_url</key>
+		<string>https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Advanced Stream</string>
+		<key>playlist_url</key>
+		<string>https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>The Morning Show - Season 1 Trailer</string>
+		<key>playlist_url</key>
+		<string>https://play-edge.itunes.apple.com/WebObjects/MZPlayLocal.woa/hls/subscription/playlist.m3u8?cc=CH&amp;svcId=tvs.vds.4021&amp;a=1522121579&amp;isExternal=true&amp;brandId=tvs.sbd.4000&amp;id=518077009&amp;l=en-GB&amp;aec=UHD</string>
+	</dict>
+</array>
+</plist>
